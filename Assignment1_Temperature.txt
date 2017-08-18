@@ -1,0 +1,13 @@
+def main():
+    Fahrenheit = int (input("Enter a temperature in Fahrenheit: "))
+    Celsius = (Fahrenheit - 32) * 5.0/9.0
+    print("Temperature:", Fahrenheit, "Fahrenheit = ", Celsius, " C")
+    answer = input('Do you want to continue?(y/n):')
+    if answer.lower().startswith("y"):
+        print("Ok, you may continue.")
+        main()
+    elif answer.lower().startswith("n"):
+        print("See ya!")
+        exit()
+main()
+
